@@ -13,7 +13,7 @@ function processNode(node, { error }) {
     header = ''
     functionBody = children[0].value.trim()
   } else {
-    header = `${children[0].value.trim()  }\n`
+    header = `\n${children[0].value.trim()}\n`
     functionBody = children[1].value.trim()
   }
   
