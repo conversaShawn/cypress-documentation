@@ -77,7 +77,6 @@ Here are args available for the currently supported browsers:
 ##### Open devtools by default
 
 ```js
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   on('before:browser:launch', (browser = {}, launchOptions) => {
     // `args` is an array of all the arguments that will
@@ -108,7 +107,6 @@ module.exports = (on, config) => {
 #### Add browser extensions:
 
 ```js
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   on('before:browser:launch', (browser, launchOptions) => {
     // supply the absolute path to an unpacked extension's folder
@@ -130,7 +128,6 @@ Here are preferences available for the currently supported browsers:
   available preferences.
 
 ```js
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   on('before:browser:launch', (browser, launchOptions) => {
     if (browser.family === 'chromium' && browser.name !== 'electron') {
@@ -218,7 +215,6 @@ for details.
 </Alert>
 
 ```js
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   on('before:browser:launch', (browser, launchOptions) => {
     if (browser.name === 'chrome' && browser.isHeadless) {
@@ -254,7 +250,6 @@ module.exports = (on, config) => {
 ### Override the device pixel ratio
 
 ```js
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   on('before:browser:launch', (browser, launchOptions) => {
     if (browser.name === 'chrome' && browser.isHeadless) {
@@ -272,7 +267,6 @@ module.exports = (on, config) => {
 ### Start fullscreen
 
 ```js
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   on('before:browser:launch', (browser = {}, launchOptions) => {
     if (browser.family === 'chromium' && browser.name !== 'electron') {
@@ -302,7 +296,6 @@ You can however send your own video file for testing by passing a Chrome command
 line switch pointing to a video file.
 
 ```js
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   on('before:browser:launch', (browser = {}, launchOptions) => {
     if (browser.family === 'chromium' && browser.name !== 'electron') {

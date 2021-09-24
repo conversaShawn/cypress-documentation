@@ -299,7 +299,6 @@ USER_NAME=aTester
 ```
 
 ```js
-// plugins/index.js
 require('dotenv').config()
 
 module.exports = (on, config) => {

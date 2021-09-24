@@ -240,8 +240,6 @@ function, pass you the project's configuration, and enable you to bind to the
 events exposed.
 
 ```javascript
-// cypress/plugins/index.js
-
 // export a function
 module.exports = (on, config) => {
   // bind to the event we care about

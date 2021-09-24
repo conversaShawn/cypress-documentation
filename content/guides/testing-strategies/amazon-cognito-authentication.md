@@ -132,12 +132,11 @@ Use the `yarn dev:cognito` command when starting the
 
 First, we need to configure Cypress to use the
 [AWS Cognito](https://aws.amazon.com/cognito) environment variables set in
-`.env` inside of the `cypress/plugins/index.js` file. In addition, we are using
-the `aws-exports.js` supplied during the
+`.env` inside of the Cypress configuration. In addition, we are using the
+`aws-exports.js` supplied during the
 [AWS Amplify CLI](https://docs.amplify.aws/CLI) build process.
 
 ```jsx
-// cypress/plugins/index.js
 // initial imports ...
 
 const awsConfig = require(path.join(__dirname, '../../aws-exports-es5.js'))

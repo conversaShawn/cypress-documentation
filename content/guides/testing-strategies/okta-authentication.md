@@ -47,10 +47,9 @@ as shown in the subsequent sections of this guide.
 
 To have access to test user credentials within our tests we need to configure
 Cypress to use the [Okta](https://okta.com) environment variables set in `.env`
-inside of the `cypress/plugins/index.js` file.
+inside of the Cypress configuration.
 
 ```jsx
-// cypress/plugins/index.js
 // initial imports ...
 
 dotenv.config()

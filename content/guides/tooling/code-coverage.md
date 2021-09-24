@@ -303,7 +303,6 @@ import '@cypress/code-coverage/support'
 ```
 
 ```js
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   require('@cypress/code-coverage/task')(on, config)
   // include any other plugin code...
@@ -485,7 +484,6 @@ again to do this by adding the code below to your
 [pluginsFile](/guides/references/configuration#Folders-Files).
 
 ```javascript
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   require('@cypress/code-coverage/task')(on, config)
   // tell Cypress to use .babelrc file

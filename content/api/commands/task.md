@@ -74,7 +74,6 @@ cy.task('hello', { greeting: 'Hello', name: 'World' })
 ```
 
 ```javascript
-// in plugins/index.js
 module.exports = (on, config) => {
   on('task', {
     // deconstruct the individual properties
@@ -124,7 +123,6 @@ cy.task('readFileMaybe', 'my-file.txt').then((textOrNull) => { ... })
 ```
 
 ```javascript
-// in plugins/index.js
 const fs = require('fs')
 
 module.exports = (on, config) => {
@@ -148,7 +146,6 @@ cy.task('countFiles', 'cypress/downloads').then((count) => { ... })
 ```
 
 ```javascript
-// in plugins/index.js
 const fs = require('fs')
 
 module.exports = (on, config) => {
@@ -185,7 +182,6 @@ describe('e2e', () => {
 ```
 
 ```javascript
-// in plugins/index.js
 // we require some code in our app that
 // is responsible for seeding our database
 const db = require('../../server/src/db')
@@ -207,7 +203,6 @@ cy.task('pause', 1000)
 ```
 
 ```javascript
-// in plugins/index.js
 module.exports = (on, config) => {
   on('task', {
     pause(ms) {
@@ -254,7 +249,6 @@ describe('Href visit', () => {
 ```
 
 ```javascript
-// in plugins/index.js
 let href
 
 module.exports = (on, config) => {
@@ -306,8 +300,7 @@ are using
 [cypress-skip-and-only-ui](https://github.com/bahmutov/cypress-skip-and-only-ui)
 plugin and want to install your own task to read a file that might not exist:
 
-```javascript
-// in plugins/index.js file
+```javascript file
 const skipAndOnlyTask = require('cypress-skip-and-only-ui/task')
 const fs = require('fs')
 const myTask = {
@@ -390,7 +383,6 @@ cy.task('queryDatabase', { dbName, query })
 ```
 
 ```javascript
-// in plugins/index.js
 const mysql = require('mysql')
 // the connection strings for different databases could
 // come from a config file, or from environment variables
@@ -461,7 +453,6 @@ cy.task('date', new Date()).then((s) => {
 ```
 
 ```javascript
-// in plugins/index.js
 module.exports = (on, config) => {
   on('task', {
     date(s) {

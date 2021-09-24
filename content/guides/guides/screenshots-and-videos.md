@@ -135,8 +135,6 @@ retry attempts or failures when using Cypress
 [test retries](/guides/guides/test-retries).
 
 ```js
-// plugins/index.js
-
 // need to install these dependencies
 // npm i lodash del --save-dev
 const _ = require('lodash')

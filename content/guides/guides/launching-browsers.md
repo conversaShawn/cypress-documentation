@@ -169,7 +169,6 @@ In the plugins file, you can filter the list of browsers passed inside the
 during `cypress open`.
 
 ```javascript
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   // inside config.browsers array each object has information like
   // {
@@ -207,7 +206,6 @@ browsers. Here is a plugins file that inserts a local Brave browser into the
 returned list.
 
 ```javascript
-// cypress/plugins/index.js
 const execa = require('execa')
 const findBrowser = () => {
   // the path is hard-coded for simplicity

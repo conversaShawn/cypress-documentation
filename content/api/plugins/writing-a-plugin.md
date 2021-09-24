@@ -22,8 +22,6 @@ cypress/plugins/index.js
 The plugins file must export a function with the following signature:
 
 ```javascript
-// cypress/plugins/index.js
-
 // export a function
 module.exports = (on, config) => {
   // configure plugins here
@@ -181,8 +179,6 @@ You can also `require` local files relative to your project.
 **Then you could do any of the following in your `pluginsFile`:**
 
 ```js
-// cypress/plugins/index.js
-
 const _ = require('lodash') // yup, dev dependencies
 const path = require('path') // yup, built in node modules
 const debug = require('debug') // yup, dependencies

@@ -89,10 +89,9 @@ you can make as many users needed to test your specific application.
 
 To have access to test user credentials within our tests we need to configure
 Cypress to use the [Auth0](https://auth0.com) environment variables set in
-`.env` inside of the `cypress/plugins/index.js` file.
+`.env` inside of the Cypress configuration.
 
 ```jsx
-// cypress/plugins/index.js
 // initial imports ...
 
 dotenv.config()

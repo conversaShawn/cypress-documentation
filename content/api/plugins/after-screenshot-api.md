@@ -79,7 +79,6 @@ If you move the location of the screenshot image, you'll want to specify the new
 `path` of the image.
 
 ```js
-// cypress/plugins/index.js
 const fs = require('fs')
 
 module.exports = (on, config) => {

@@ -21,7 +21,6 @@ To modify configuration, you return an object from your plugins file exported
 function.
 
 ```javascript
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   console.log(config) // see everything in here!
 
@@ -88,7 +87,6 @@ In the plugins file, you can filter the list of browsers passed inside the
 during `cypress open`.
 
 ```javascript
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   // inside config.browsers array each object has information like
   // {

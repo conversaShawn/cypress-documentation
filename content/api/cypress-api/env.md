@@ -162,7 +162,6 @@ Use this approach to grab the value of an environment variable _once_ before any
 of the tests in your spec run.
 
 ```js
-// cypress/plugins/index.js
 module.exports = (on, config) => {
   config.env.sharedSecret =
     process.env.NODE_ENV === 'qa' ? 'hoop brick tort' : 'sushi cup lemon'

@@ -249,8 +249,6 @@ The example below shows how to delete the recorded video for specs that had no
 retry attempts or failures when using Cypress test retries.
 
 ```js
-// plugins/index.js
-
 // need to install these dependencies
 // npm i lodash del --save-dev
 const _ = require('lodash')
